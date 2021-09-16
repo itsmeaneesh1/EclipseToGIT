@@ -1,0 +1,44 @@
+Create a hibernate application persist the department using Hibernate Annotations..
+
+Task : Create a database named myhibernate in MySQL and run the SQLQuery Attached.
+
+Tasks:
+1.Create a bean class Named Department inside com.dsrc.bean package
+2.Create these private variables
+
+		int deptno , string deptname , string location.
+		
+3. Create the getters and setters.
+4. Create the hibernate configuration file in src named hibernate.cfg.xml
+
+sample Configuration
+-----------------
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+       <Do configuration>
+     <Specify the annotated class.. instead of mapping xml>
+      </session-factory>  
+  
+</hibernate-configuration>  
+5. Add the required jar files.
+6. ANNOTATE THE BEAN CLASS
+7. Add the following code implementations in MyMain class main method.
+	 a) Load the Configuration File using Configuration class.
+	 b) Create a session and transaction.
+	 c) Begin the transaction
+	 d) Set the following bean values  70 , HR , INDIA
+	 e) Call the methods to save the value.
+	 f) Close all the objects
+	 g)System.out.println("Done...") as last line.. run the application
+	 f) Verify the data in the database MySQL.
+	  
+		
+Note:
+In connection URL change the localhost into evaluationj1.klassakt.com
+and database name as you used in your application	

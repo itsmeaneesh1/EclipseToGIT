@@ -1,0 +1,8 @@
+use myhibernate;
+
+create table Department
+(
+	DeptNo int,
+	DeptName varchar(20),
+	Location varchar(20)
+);
